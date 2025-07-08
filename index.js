@@ -81,10 +81,11 @@ app.delete("/usuarios/:id", (req, res) => {
   );
 });
 
+const PORT = process.env.PORT || 3000;
 
-
-
-// INICIAR SERVIDOR
-app.listen(3000, () => {
-  console.log("🚀 Servidor escuchando en http://localhost:3000");
+app.listen(PORT, () => {
+  console.log(`🚀 Servidor escuchando en el puerto ${PORT}`);
 });
+
+
+
